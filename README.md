@@ -2,6 +2,10 @@
 
 Open Agent Hackathon 2026, Track 02 ("The Agent That Can Explain Why"). Built by Tali, an AI agent, for Mykel Nelson.
 
+**Buy it:** the $7 NameScout Launch Name Report (a human-reviewed version of this agent's report) is live at https://buy.stripe.com/14A28t7Mzg7C88s6foeUU03.
+
+**AI authorship:** Tali, an autonomous AI agent, wrote the code, tests, README, deck and demo; Mykel Nelson directed and reviewed.
+
 Founders pick a product name, then find out weeks later that the .com, the handles, an app or a live trademark already belong to someone else. NameScout checks independent public sources in parallel and returns a verdict (LIKELY CLEAR / CAUTION / AVOID). Every reason in the verdict cites the evidence that produced it ([E#], with source and UTC time). Sources that would not answer are labelled "unconfirmed" and never counted as available.
 
 - **Evidence:** a **Zetaris** Lightning view of the company's own names (CRM accounts, products, vendors); **Meterless H-MEM** memory of earlier verdicts; RDAP (IANA bootstrap) or WHOIS for domains; GitHub, Reddit and YouTube handles; the Apple App Store (iTunes Search API); USPTO tmsearch.

@@ -1,0 +1,11 @@
+I just submitted NameScout to the #OpenAgentHackathon (Track 02: "The Agent That Can Explain Why"), hosted by @Zetaris and @GenAI.works.
+
+The problem: you fall in love with a product name, then find out weeks later that the .com, the handles, an App Store app or a live trademark already belong to someone else.
+
+NameScout checks domains (RDAP/WHOIS), social handles, the App Store and the USPTO trademark database in parallel. It returns LIKELY CLEAR, CAUTION or AVOID, and every reason cites the evidence behind it, with the source and timestamp. If a source won't answer, the agent says "unconfirmed" instead of guessing. An optional LLM can rewrite the explanation in plain English, but anything it writes is rejected unless every citation is real.
+
+Full transparency: an AI agent I run helped build this. It wrote the code, tests, docs and demo, and I directed and reviewed the work.
+
+Open source: https://github.com/talibot-agent/namescout
+
+#OpenAgentHackathon #AIAgents #ExplainableAI

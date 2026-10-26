@@ -1,0 +1,665 @@
+{
+ "name": "notions",
+ "risk": 90,
+ "verdict": "AVOID",
+ "factors": [
+  [
+   25,
+   "notions.com is already registered, so the most valuable domain is unavailable",
+   [
+    "E1"
+   ]
+  ],
+  [
+   10,
+   "2 of 3 checked domains are registered",
+   [
+    "E1",
+    "E3"
+   ]
+  ],
+  [
+   5,
+   "Handle already in use on github",
+   [
+    "E4"
+   ]
+  ],
+  [
+   10,
+   "1 App Store app(s) start with this name, e.g. \"Notions Task Manager\" by Armchair Engineering",
+   [
+    "E10"
+   ]
+  ],
+  [
+   40,
+   "Live USPTO mark \"NOTIONS\" (serial 76452616, owner [\"Leanin' Tree, Inc. (CORPORATION; COLORADO, USA)\"]) matches exactly",
+   [
+    "E11"
+   ]
+  ]
+ ],
+ "unconfirmed": [
+  "E2",
+  "E5",
+  "E7",
+  "E8",
+  "E9"
+ ],
+ "explanation": "Verdict for \"notions\": AVOID (risk 90/100).\n+40: Live USPTO mark \"NOTIONS\" (serial 76452616, owner [\"Leanin' Tree, Inc. (CORPORATION; COLORADO, USA)\"]) matches exactly [E11].\n+25: notions.com is already registered, so the most valuable domain is unavailable [E1].\n+10: 2 of 3 checked domains are registered [E1] [E3].\n+10: 1 App Store app(s) start with this name, e.g. \"Notions Task Manager\" by Armchair Engineering [E10].\n+5: Handle already in use on github [E4].\nNot counted either way, because the source would not confirm: [E2] [E5] [E7] [E8] [E9].\nContext, not scored: H-MEM recalls a prior check on a similar name: brand name notion verdict AVOID risk 100/100. notion.com is already registered, so the most valuable domain is unavailable [E1]; 2 of 3 chec [E12].\nTrademark results are a starting point, not legal advice.",
+ "narration": null,
+ "evidence": [
+  {
+   "id": "E1",
+   "kind": "domain",
+   "check": "notions.com",
+   "result": "taken",
+   "source": "RDAP https://rdap.verisign.com/com/v1/",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E2",
+   "kind": "domain",
+   "check": "notions.io",
+   "result": "couldn't confirm (WHOIS timed out)",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E3",
+   "kind": "domain",
+   "check": "notions.ai",
+   "result": "taken",
+   "source": "RDAP https://rdap.identitydigital.services/rdap/",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E4",
+   "kind": "handle",
+   "check": "github:@notions",
+   "result": "taken",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E5",
+   "kind": "handle",
+   "check": "reddit:@notions",
+   "result": "couldn't confirm (403)",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E6",
+   "kind": "handle",
+   "check": "youtube:@notions",
+   "result": "available",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E7",
+   "kind": "handle",
+   "check": "instagram:@notions",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E8",
+   "kind": "handle",
+   "check": "tiktok:@notions",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E9",
+   "kind": "handle",
+   "check": "x:@notions",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E10",
+   "kind": "apps",
+   "check": "Apple App Store (iTunes Search API)",
+   "matches": [
+    {
+     "app": "Notions Task Manager",
+     "seller": "Armchair Engineering",
+     "url": "https://apps.apple.com/us/app/notions-task-manager/id963570739?uo=4"
+    }
+   ],
+   "at": "2026-10-26T15:53:18Z",
+   "status": 200
+  },
+  {
+   "id": "E11",
+   "kind": "trademark",
+   "check": "USPTO tmsearch",
+   "matches": [
+    {
+     "wordmark": "NOTIONS",
+     "id": "76452616",
+     "registrationId": "2928122",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Leanin' Tree, Inc. (CORPORATION; COLORADO, USA)"
+     ]
+    },
+    {
+     "wordmark": "TRUE NOTIONS",
+     "id": "88954781",
+     "registrationId": "6238176",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Wu, Henry (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "NANCY'S NOTIONS",
+     "id": "73591280",
+     "registrationId": "1413356",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "NANCY'S NOTIONS, LTD. (CORPORATION; WISCONSIN, USA)",
+      "NANCY'S NOTIONS, LLC (LIMITED LIABILITY COMPANY; WISCONSIN, USA)"
+     ]
+    },
+    {
+     "wordmark": "FRAME NOTIONS",
+     "id": "90622311",
+     "registrationId": "6881103",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Breeze Bee Inc. (CORPORATION; JAPAN)"
+     ]
+    },
+    {
+     "wordmark": "NANCY'S NOTIONS",
+     "id": "88408676",
+     "registrationId": "5907970",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "Tacony Corporation (CORPORATION; MISSOURI, USA)",
+      "NANCY'S NOTIONS, LLC (LIMITED LIABILITY COMPANY; WISCONSIN, USA)"
+     ]
+    },
+    {
+     "wordmark": "SKETCHY NOTIONS",
+     "id": "86072135",
+     "registrationId": "4533150",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Ward, Chelsea K (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "NIFTY NOTIONS",
+     "id": "74629449",
+     "registrationId": "1963059",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Quilters' Resource Inc. (CORPORATION; ILLINOIS, USA)",
+      "BREWER QUILTING AND SEWING SUPPLIES, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "PACIFIC NOTIONS",
+     "id": "90573488",
+     "registrationId": "6628742",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Friends of KEXP (non-profit corporation; WASHINGTON, USA)"
+     ]
+    },
+    {
+     "wordmark": "INVISIBLE NOTIONS",
+     "id": "99389681",
+     "registrationId": "8489597",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Invisible Notions LLC (LIMITED LIABILITY COMPANY; Florida, USA)"
+     ]
+    },
+    {
+     "wordmark": "AMERICAN NOTIONS",
+     "id": "88426291",
+     "registrationId": "6072627",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "Karanjit Singh (INDIVIDUAL; INDIA)",
+      "Aynabeba Singh (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "NANCY'S NOTIONS",
+     "id": "88408684",
+     "registrationId": "5907971",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "Tacony Corporation (CORPORATION; MISSOURI, USA)",
+      "NANCY'S NOTIONS, LLC (LIMITED LIABILITY COMPANY; WISCONSIN, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTIONS",
+     "id": "73507728",
+     "registrationId": "1340740",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "CHAMPION INTERNATIONAL CORPORATION (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTIONS",
+     "id": "86340101",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "The Honest Kitchen, Inc. (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTIONS",
+     "id": "97192079",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Terravant Wine Company, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTIONS",
+     "id": "86273470",
+     "registrationId": "4770094",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Terravant Wine Company, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTIONS",
+     "id": "74018600",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Accessory Collection Inc., The (CORPORATION; NEW JERSEY, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTIONS+",
+     "id": "85937746",
+     "registrationId": "4704475",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "24 Notions LLC (LIMITED LIABILITY COMPANY; KANSAS, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTIONS",
+     "id": "73517795",
+     "registrationId": "1356869",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "ZAYRE CORP. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTIONS",
+     "id": "78504819",
+     "registrationId": "3150517",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Scraptivity Scrapbooking Inc. (CORPORATION; CANADA)"
+     ]
+    },
+    {
+     "wordmark": "COOL NOTIONS",
+     "id": "76054543",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Alster Imports Co. Inc. (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "UNITED NOTIONS",
+     "id": "97770868",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Elsa Marie Romieu (LIMITED LIABILITY COMPANY; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "SCIENCE NOTIONS",
+     "id": "75291459",
+     "registrationId": "2242428",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Cole-Parmer Instrument Company (CORPORATION; ILLINOIS, USA)"
+     ]
+    },
+    {
+     "wordmark": "HOT NOTIONS",
+     "id": "75444820",
+     "registrationId": "2307903",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Sideware Systems Inc. (CORPORATION; CANADA)"
+     ]
+    },
+    {
+     "wordmark": "NIGHT NOTIONS",
+     "id": "73556284",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "WALLACE O'FARRELL MARKETING, INC. (CORPORATION; WASHINGTON, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOBLE NOTIONS",
+     "id": "87527537",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Christopher J Brown (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "NOBLE NOTIONS",
+     "id": "86147101",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Brown, Christopher (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "NET NOTIONS",
+     "id": "75361568",
+     "registrationId": "2290811",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Sideware Systems Inc. (CORPORATION; CANADA)"
+     ]
+    },
+    {
+     "wordmark": "NATURAL NOTIONS",
+     "id": "75885716",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Dial Brands, Inc. (CORPORATION; ARIZONA, USA)"
+     ]
+    },
+    {
+     "wordmark": "ESSENTIAL NOTIONS",
+     "id": "85910198",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Wild Palms Press LLC (LIMITED LIABILITY COMPANY; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "FANCY NOTIONS",
+     "id": "72305507",
+     "registrationId": "0882209",
+     "alive": false,
+     "statusDescription": "EXPIRED",
+     "ownerName": [
+      "AVON PRODUCTS, INC. (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "HIGHER NOTIONS",
+     "id": "75307059",
+     "registrationId": "2182182",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Cornerstone Clothiers, L.L.C. (LIMITED LIABILITY COMPANY; TENNESSEE, USA)"
+     ]
+    },
+    {
+     "wordmark": "SWEET NOTIONS",
+     "id": "73463675",
+     "registrationId": "1346165",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Scoa Industries Inc. (CORPORATION; DELAWARE, USA)",
+      "BRANDED LLC (LIMITED LIABILITY COMPANY; Not in List)"
+     ]
+    },
+    {
+     "wordmark": "THE NOTIONS",
+     "id": "74169529",
+     "registrationId": "1718906",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "BUCHANAN, AUDREY A. (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "ROMANTIC NOTIONS",
+     "id": "76108456",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Buy-Rite Costume Jewelry, Inc. (CORPORATION; NEW JERSEY, USA)"
+     ]
+    },
+    {
+     "wordmark": "ROMANTIC NOTIONS",
+     "id": "76108457",
+     "registrationId": "2626113",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Buy-Rite Costume Jewelry, Inc. (CORPORATION; NEW JERSEY, USA)",
+      "WCP AND TAG ACQUISITION CORP. (CORPORATION; NEW JERSEY, USA)"
+     ]
+    },
+    {
+     "wordmark": "LOVE NOTIONS",
+     "id": "76326980",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Jones, Carlos (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "BODY NOTIONS",
+     "id": "78899050",
+     "registrationId": "3236831",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Linda's Aroma Therapy and Skin Care (PARTNERSHIP; TENNESSEE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NUMINOUS NOTIONS",
+     "id": "77232864",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Mesple, Maryanne (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "NOMADIC NOTIONS",
+     "id": "74209673",
+     "registrationId": "1711567",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Artistic Imports, Inc. (CORPORATION; TEXAS, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOSTALGIC NOTIONS",
+     "id": "74160923",
+     "registrationId": "1713542",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Hawk, Barbara (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "ROMANTIC NOTIONS",
+     "id": "75299535",
+     "registrationId": "2250263",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Indiana Glass Company (CORPORATION; INDIANA, USA)"
+     ]
+    },
+    {
+     "wordmark": "UNITED NOTIONS",
+     "id": "75235735",
+     "registrationId": "2154768",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "CENTRE FOR INTERNATIONAL BUSINESS STUDIES B.V. (LIMITED COMPANY; NETHERLANDS)"
+     ]
+    },
+    {
+     "wordmark": "NOTIONS & POTIONS",
+     "id": "75369324",
+     "registrationId": "2258752",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Casino Magic Corp. (CORPORATION; MINNESOTA, USA)"
+     ]
+    },
+    {
+     "wordmark": "BODY NOTIONS",
+     "id": "75800831",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Body Notions International Inc. (CORPORATION; CANADA)"
+     ]
+    },
+    {
+     "wordmark": "DELIGHTFUL NOTIONS",
+     "id": "73398718",
+     "registrationId": "1327820",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Delightful Notions, Ltd. (CORPORATION; OREGON, USA)"
+     ]
+    },
+    {
+     "wordmark": "NECESSARY NOTIONS",
+     "id": "78278923",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "CBA Enterprises, L.L.C. (LIMITED LIABILITY COMPANY; LOUISIANA, USA)"
+     ]
+    },
+    {
+     "wordmark": "FANCY NOTIONS",
+     "id": "72415103",
+     "registrationId": "0955092",
+     "alive": false,
+     "statusDescription": "EXPIRED",
+     "ownerName": [
+      "AVON PRODUCTS, INC. (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "PUBLIC NOTIONS",
+     "id": "85151492",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Giangrande, Marie (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "PARTY NOTIONS",
+     "id": "88098552",
+     "registrationId": "5911935",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "ENOTIONS LLC (LIMITED LIABILITY COMPANY; TEXAS, USA)"
+     ]
+    },
+    {
+     "wordmark": "SACRED NOTIONS",
+     "id": "99622986",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - EXPRESS",
+     "ownerName": [
+      "SEYOUM, ELLENI A. (INDIVIDUAL; USA)"
+     ]
+    }
+   ],
+   "source": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+   "at": "2026-10-26T15:53:18Z"
+  },
+  {
+   "id": "E12",
+   "kind": "memory",
+   "check": "prior verdicts (H-MEM)",
+   "matches": [
+    {
+     "id": "mem-2",
+     "relevance": 0.198,
+     "content": "brand name notion verdict AVOID risk 100/100. notion.com is already registered, so the most valuable domain is unavailable [E1]; 2 of 3 checked domains are registered [E1,E3]; Handle already in use on github, youtube [E4,E6]; 4 App Store app(s) start with this name, e.g. \"Notion: Notes, Tasks, AI\" by Notion Labs, Incorporated [E10]; Live USPTO mark \"NOTION\" (serial 97879391, owner ['Squeeze Nutrition LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)']) matches exactly [E11]",
+     "source": "namescout:notion"
+    }
+   ],
+   "source": "Meterless H-MEM MemoryRetrievalService (vendor/hmem)",
+   "at": "2026-10-26T15:53:19Z"
+  }
+ ],
+ "memory_id": "mem-5"
+}

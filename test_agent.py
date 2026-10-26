@@ -48,3 +48,29 @@ def test_trademarks_live():
         return
     r = checks.trademarks("notion")
     assert any(m["wordmark"] == "NOTION" and m["alive"] for m in r["matches"])
+
+
+# --- sponsor integrations -------------------------------------------------
+import io, json as _json, os as _os, agent as _agent, zetaris_source as _z, hmem as _h
+
+def test_zetaris_sql_is_sanitised():
+    sql = _z.build_sql("Zen'tro; DROP")
+    assert "zentrodrop" in sql and ";" not in sql.split("FROM")[1] and "'" not in sql.split("LIKE '%")[1].rstrip("%'")
+
+def test_zetaris_portfolio_collision_scores(monkeypatch):
+    for k in ('ZETARIS_BASE_URL', 'ZETARIS_ORG_ID', 'ZETARIS_API_KEY'): monkeypatch.setenv(k, 'http://z' if 'URL' in k else '1')
+    seen = {}
+    def opener(req, timeout=30):
+        seen['url'] = req.full_url; seen['org'] = req.get_header('X-org-id')
+        return io.BytesIO(_json.dumps({'data': {'columns': ['name', 'kind', 'system', 'owner'], 'rows': [['Zentro', 'product', 'catalogue', 'growth']]}}).encode())
+    e = dict(id='E9', kind='portfolio', **_z.portfolio('zentro', opener))
+    assert seen['url'].endswith('/api/proxy/sql-editor/sqls/run-query') and seen['org'] == '1'
+    a = _agent.assess('zentro', [dict(id='E1', kind='apps', check='apps', matches=[]), dict(id='E2', kind='trademark', check='tm', matches=[]), e])
+    assert any('Zetaris' in why and ids == ['E9'] for _, why, ids in a['factors'])
+
+def test_hmem_remember_then_recall(tmp_path, monkeypatch):
+    monkeypatch.setenv('NAMESCOUT_HMEM_DIR', str(tmp_path))
+    mid = _h.remember(dict(name='quillora', verdict='CAUTION', risk=30, factors=[(25, 'quillora.com is already registered', ['E1'])]))
+    assert mid and mid.startswith('mem-')
+    r = _h.recall('quillorai')
+    assert any('quillora' in m['content'] for m in r['matches'])

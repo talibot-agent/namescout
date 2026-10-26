@@ -57,14 +57,14 @@
    "check": "notion.com",
    "result": "taken",
    "source": "RDAP https://rdap.verisign.com/com/v1/",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
   },
   {
    "id": "E2",
    "kind": "domain",
    "check": "notion.io",
    "result": "couldn't confirm (WHOIS timed out)",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
   },
   {
    "id": "E3",
@@ -72,49 +72,49 @@
    "check": "notion.ai",
    "result": "taken",
    "source": "RDAP https://rdap.identitydigital.services/rdap/",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
   },
   {
    "id": "E4",
    "kind": "handle",
    "check": "github:@notion",
    "result": "taken",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
   },
   {
    "id": "E5",
    "kind": "handle",
    "check": "reddit:@notion",
    "result": "couldn't confirm (403)",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
   },
   {
    "id": "E6",
    "kind": "handle",
    "check": "youtube:@notion",
    "result": "taken",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
   },
   {
    "id": "E7",
    "kind": "handle",
    "check": "instagram:@notion",
    "result": "couldn't confirm (platform hides availability; manual check link given)",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
   },
   {
    "id": "E8",
    "kind": "handle",
    "check": "tiktok:@notion",
    "result": "couldn't confirm (platform hides availability; manual check link given)",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
   },
   {
    "id": "E9",
    "kind": "handle",
    "check": "x:@notion",
    "result": "couldn't confirm (platform hides availability; manual check link given)",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
   },
   {
    "id": "E10",
@@ -142,7 +142,7 @@
      "url": "https://apps.apple.com/us/app/notion-music-notation-tab/id475820434?uo=4"
     }
    ],
-   "at": "2026-10-26T13:28:57Z",
+   "at": "2026-10-26T15:52:31Z",
    "status": 200
   },
   {
@@ -277,6 +277,16 @@
      ]
     },
     {
+     "wordmark": "NOTION CERTIFIED",
+     "id": "97556509",
+     "registrationId": "7233847",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Notion Labs, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
      "wordmark": "LAW NOTION",
      "id": "97775532",
      "registrationId": "7363802",
@@ -298,16 +308,6 @@
      ]
     },
     {
-     "wordmark": "NOTION CERTIFIED",
-     "id": "97556509",
-     "registrationId": "7233847",
-     "alive": true,
-     "statusDescription": "REGISTERED",
-     "ownerName": [
-      "Notion Labs, Inc. (CORPORATION; DELAWARE, USA)"
-     ]
-    },
-    {
      "wordmark": "FILMIC NOTION",
      "id": "90063152",
      "registrationId": "6398245",
@@ -318,16 +318,6 @@
      ]
     },
     {
-     "wordmark": "SPRING NOTION",
-     "id": "98415287",
-     "registrationId": "7610550",
-     "alive": true,
-     "statusDescription": "REGISTERED",
-     "ownerName": [
-      "JMI GLOBAL (CORPORATION; CALIFORNIA, USA)"
-     ]
-    },
-    {
      "wordmark": "FIBER NOTION",
      "id": "77025168",
      "registrationId": "3419056",
@@ -335,6 +325,16 @@
      "statusDescription": "REGISTERED AND RENEWED",
      "ownerName": [
       "Ridel, Katherine R. (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "SPRING NOTION",
+     "id": "98415287",
+     "registrationId": "7610550",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "JMI GLOBAL (CORPORATION; CALIFORNIA, USA)"
      ]
     },
     {
@@ -380,16 +380,6 @@
     },
     {
      "wordmark": "NOTION",
-     "id": "87428620",
-     "registrationId": null,
-     "alive": false,
-     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
-     "ownerName": [
-      "HOOPSWAGG LLC (LIMITED LIABILITY COMPANY; OREGON, USA)"
-     ]
-    },
-    {
-     "wordmark": "NOTION",
      "id": "78630881",
      "registrationId": "3738196",
      "alive": false,
@@ -411,22 +401,12 @@
     },
     {
      "wordmark": "NOTION",
-     "id": "97437602",
+     "id": "87428620",
      "registrationId": null,
      "alive": false,
      "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
      "ownerName": [
-      "Notion Golf Ltd (private limited company; UNITED KINGDOM)"
-     ]
-    },
-    {
-     "wordmark": "NOTION",
-     "id": "86775148",
-     "registrationId": null,
-     "alive": false,
-     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
-     "ownerName": [
-      "TROVE, INC. (CORPORATION; DELAWARE, USA)"
+      "HOOPSWAGG LLC (LIMITED LIABILITY COMPANY; OREGON, USA)"
      ]
     },
     {
@@ -442,10 +422,30 @@
     },
     {
      "wordmark": "NOTION",
+     "id": "97437602",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Notion Golf Ltd (private limited company; UNITED KINGDOM)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
      "id": "86576554",
      "registrationId": null,
      "alive": false,
      "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "TROVE, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "86775148",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
      "ownerName": [
       "TROVE, INC. (CORPORATION; DELAWARE, USA)"
      ]
@@ -472,6 +472,16 @@
     },
     {
      "wordmark": "NOTION",
+     "id": "77082009",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "XTRANORMAL TECHNOLOGY INC. (CORPORATION; CANADA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
      "id": "85924294",
      "registrationId": "4507917",
      "alive": false,
@@ -492,43 +502,13 @@
      ]
     },
     {
-     "wordmark": "NOTION",
-     "id": "77082009",
+     "wordmark": "HAIR NOTION",
+     "id": "79257301",
      "registrationId": null,
      "alive": false,
      "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
      "ownerName": [
-      "XTRANORMAL TECHNOLOGY INC. (CORPORATION; CANADA)"
-     ]
-    },
-    {
-     "wordmark": "NOTION & GRACE",
-     "id": "86523243",
-     "registrationId": null,
-     "alive": false,
-     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
-     "ownerName": [
-      "Be Inspired Boutique (CORPORATION; CALIFORNIA, USA)"
-     ]
-    },
-    {
-     "wordmark": "CURIOUS NOTION",
-     "id": "87043361",
-     "registrationId": "5109538",
-     "alive": false,
-     "statusDescription": "CANCELLED - SECTION 8",
-     "ownerName": [
-      "Curious Notion, Inc. (CORPORATION; CALIFORNIA, USA)"
-     ]
-    },
-    {
-     "wordmark": "NOTION DETECTOR",
-     "id": "78034549",
-     "registrationId": null,
-     "alive": false,
-     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
-     "ownerName": [
-      "Tocco, Douglas, M. (INDIVIDUAL; USA)"
+      "QingDao Show-Ing Hair Products Co.,Ltd. (LIMITED LIABILITY COMPANY; CHINA)"
      ]
     },
     {
@@ -552,33 +532,33 @@
      ]
     },
     {
-     "wordmark": "HAIR NOTION",
-     "id": "79257301",
-     "registrationId": null,
-     "alive": false,
-     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
-     "ownerName": [
-      "QingDao Show-Ing Hair Products Co.,Ltd. (LIMITED LIABILITY COMPANY; CHINA)"
-     ]
-    },
-    {
-     "wordmark": "MOTION NOTION",
-     "id": "74322831",
+     "wordmark": "NOTION DETECTOR",
+     "id": "78034549",
      "registrationId": null,
      "alive": false,
      "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
      "ownerName": [
-      "Mentele, Jerald F. (INDIVIDUAL; USA)"
+      "Tocco, Douglas, M. (INDIVIDUAL; USA)"
      ]
     },
     {
-     "wordmark": "NOTION DETECTOR",
-     "id": "75705513",
+     "wordmark": "NOTION & GRACE",
+     "id": "86523243",
      "registrationId": null,
      "alive": false,
-     "statusDescription": "ABANDONED PETITION TO REVIVE-DENIED",
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
      "ownerName": [
-      "tocco, Douglas (INDIVIDUAL; USA)"
+      "Be Inspired Boutique (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "CURIOUS NOTION",
+     "id": "87043361",
+     "registrationId": "5109538",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Curious Notion, Inc. (CORPORATION; CALIFORNIA, USA)"
      ]
     },
     {
@@ -592,6 +572,26 @@
      ]
     },
     {
+     "wordmark": "NOTION DETECTOR",
+     "id": "75705513",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED PETITION TO REVIVE-DENIED",
+     "ownerName": [
+      "tocco, Douglas (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "MOTION NOTION",
+     "id": "74322831",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Mentele, Jerald F. (INDIVIDUAL; USA)"
+     ]
+    },
+    {
      "wordmark": "SPRING NOTION",
      "id": "86639919",
      "registrationId": "4892234",
@@ -599,36 +599,6 @@
      "statusDescription": "CANCELLED - SECTION 8",
      "ownerName": [
       "JMI GLOBAL (CORPORATION; CALIFORNIA, USA)"
-     ]
-    },
-    {
-     "wordmark": "SPRING NOTION",
-     "id": "86639917",
-     "registrationId": "4877600",
-     "alive": false,
-     "statusDescription": "CANCELLED - SECTION 8",
-     "ownerName": [
-      "JMI GLOBAL (CORPORATION; CALIFORNIA, USA)"
-     ]
-    },
-    {
-     "wordmark": "NOTION AI",
-     "id": "86734776",
-     "registrationId": null,
-     "alive": false,
-     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
-     "ownerName": [
-      "TROVE, INC. (CORPORATION; DELAWARE, USA)"
-     ]
-    },
-    {
-     "wordmark": "ROGUE NOTION",
-     "id": "86118190",
-     "registrationId": null,
-     "alive": false,
-     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
-     "ownerName": [
-      "Rogue Notion LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
      ]
     },
     {
@@ -652,6 +622,36 @@
      ]
     },
     {
+     "wordmark": "NOTION AI",
+     "id": "86734776",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "TROVE, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "ROGUE NOTION",
+     "id": "86118190",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Rogue Notion LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+     ]
+    },
+    {
+     "wordmark": "SPRING NOTION",
+     "id": "86639917",
+     "registrationId": "4877600",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "JMI GLOBAL (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
      "wordmark": "NOTION SYSTEMS",
      "id": "99001749",
      "registrationId": null,
@@ -663,7 +663,16 @@
     }
    ],
    "source": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
-   "at": "2026-10-26T13:28:57Z"
+   "at": "2026-10-26T15:52:31Z"
+  },
+  {
+   "id": "E12",
+   "kind": "memory",
+   "check": "prior verdicts (H-MEM)",
+   "matches": [],
+   "source": "Meterless H-MEM MemoryRetrievalService (vendor/hmem)",
+   "at": "2026-10-26T15:52:31Z"
   }
- ]
+ ],
+ "memory_id": "mem-2"
 }

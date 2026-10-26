@@ -9,7 +9,7 @@ OpenAI-compatible endpoint (e.g. NVIDIA Nemotron on build.nvidia.com: set LLM_BA
 LLM_MODEL); the LLM may only rephrase cited facts, and every [E#] it emits is validated."""
 import json, os, re, sys, html, urllib.request
 from concurrent.futures import ThreadPoolExecutor
-import checks
+import checks, hmem, zetaris_source
 
 PLAT = ('github', 'reddit', 'youtube', 'instagram', 'tiktok', 'x')
 
@@ -17,6 +17,9 @@ def gather(name, tlds):
     jobs = [('domain', lambda t=t: checks.domain(name, t)) for t in tlds]
     jobs += [('handle', lambda p=p: checks.handle(name, p)) for p in PLAT]
     jobs += [('apps', lambda: checks.apps(name)), ('trademark', lambda: checks.trademarks(name))]
+    if zetaris_source.configured():
+        jobs.append(('portfolio', lambda: zetaris_source.portfolio(name)))
+    jobs.append(('memory', lambda: hmem.recall(name)))
     with ThreadPoolExecutor(8) as ex:
         res = list(ex.map(lambda j: (j[0], j[1]()), jobs))
     return [dict(id=f'E{i+1}', kind=k, **r) for i, (k, r) in enumerate(res)]
@@ -44,6 +47,14 @@ def assess(name, ev):
     live = [m for m in tm.get('matches', []) if m.get('alive') and norm(m.get('wordmark')) == norm(name)]
     if live:
         f.append((40, f"Live USPTO mark \"{live[0]['wordmark']}\" (serial {live[0].get('id')}, owner {live[0].get('ownerName')}) matches exactly", [tm['id']]))
+    pf = next((e for e in ev if e['kind'] == 'portfolio'), None)
+    if pf:
+        hit = [m for m in pf.get('matches', []) if norm(m.get('name')) == norm(name)]
+        near = [m for m in pf.get('matches', []) if m not in hit]
+        if hit:
+            f.append((35, f"Collides with an internal {hit[0].get('kind')} \"{hit[0].get('name')}\" in {hit[0].get('system')} (federated by Zetaris)", [pf['id']]))
+        elif near:
+            f.append((10, f"{len(near)} internal record(s) contain the name, e.g. \"{near[0].get('name')}\" in {near[0].get('system')}", [pf['id']]))
     unk = [e for e in ev if "couldn't confirm" in str(e.get('result', ''))]
     risk = min(100, sum(p for p, _, _ in f))
     verdict = 'AVOID' if risk >= 60 else 'CAUTION' if risk >= 25 else 'LIKELY CLEAR'
@@ -58,6 +69,10 @@ def explain(name, a, ev):
         lines.append(f"+{p}: {why} " + ' '.join(f'[{i}]' for i in ids) + '.')
     if a['unconfirmed']:
         lines.append('Not counted either way, because the source would not confirm: ' + ' '.join(f'[{i}]' for i in a['unconfirmed']) + '.')
+    mem = next((e for e in ev if e['kind'] == 'memory' and e.get('matches')), None)
+    if mem:
+        m = mem['matches'][0]
+        lines.append(f"Context, not scored: H-MEM recalls a prior check on a similar name: {m['content'][:140]} [{mem['id']}].")
     lines.append('Trademark results are a starting point, not legal advice.')
     return '\n'.join(lines)
 
@@ -88,6 +103,7 @@ def run(name, tlds=('com', 'io', 'ai'), out_dir='.'):
     ev = gather(name, list(tlds)); a = assess(name, ev); text = explain(name, a, ev)
     narr = llm_narrate(text, ev)
     rep = dict(name=name, **a, explanation=text, narration=narr, evidence=ev)
+    rep['memory_id'] = hmem.remember(rep)
     os.makedirs(out_dir, exist_ok=True)
     open(os.path.join(out_dir, f'{name}.json'), 'w').write(json.dumps(rep, indent=1, default=str))
     open(os.path.join(out_dir, f'{name}.html'), 'w').write(report_html(name, a, ev, narr or text))

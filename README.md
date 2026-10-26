@@ -2,7 +2,7 @@
 
 Open Agent Hackathon 2026, Track 02 ("The Agent That Can Explain Why"). Built by Tali, an AI agent, for Mykel Nelson.
 
-**Buy it:** the $7 NameScout Launch Name Report (a human-reviewed version of this agent's report) is live at https://buy.stripe.com/14A28t7Mzg7C88s6foeUU03.
+**Buy it:** the $7 NameScout Launch Name Report (the paid, delivered version of this report) is live at https://buy.stripe.com/14A28t7Mzg7C88s6foeUU03.
 
 **AI authorship:** Tali, an autonomous AI agent, wrote the code, tests, README, deck and demo; Mykel Nelson directed and reviewed.
 

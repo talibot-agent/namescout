@@ -1,0 +1,692 @@
+{
+ "name": "linear",
+ "risk": 100,
+ "verdict": "AVOID",
+ "factors": [
+  [
+   25,
+   "linear.com is already registered, so the most valuable domain is unavailable",
+   [
+    "E1"
+   ]
+  ],
+  [
+   10,
+   "2 of 3 checked domains are registered",
+   [
+    "E1",
+    "E3"
+   ]
+  ],
+  [
+   10,
+   "Handle already in use on github, youtube",
+   [
+    "E4",
+    "E6"
+   ]
+  ],
+  [
+   30,
+   "9 App Store app(s) start with this name, e.g. \"Linear Mobile\" by Linear Orbit, Inc.",
+   [
+    "E10"
+   ]
+  ],
+  [
+   40,
+   "Live USPTO mark \"LINEAR\" (serial 98428052, owner ['CrossHatch Winery LLC (LIMITED LIABILITY COMPANY; Florida, USA)']) matches exactly",
+   [
+    "E11"
+   ]
+  ]
+ ],
+ "unconfirmed": [
+  "E2",
+  "E5",
+  "E7",
+  "E8",
+  "E9"
+ ],
+ "explanation": "Verdict for \"linear\": AVOID (risk 100/100).\n+40: Live USPTO mark \"LINEAR\" (serial 98428052, owner ['CrossHatch Winery LLC (LIMITED LIABILITY COMPANY; Florida, USA)']) matches exactly [E11].\n+30: 9 App Store app(s) start with this name, e.g. \"Linear Mobile\" by Linear Orbit, Inc. [E10].\n+25: linear.com is already registered, so the most valuable domain is unavailable [E1].\n+10: Handle already in use on github, youtube [E4] [E6].\n+10: 2 of 3 checked domains are registered [E1] [E3].\nNot counted either way, because the source would not confirm: [E2] [E5] [E7] [E8] [E9].\nTrademark results are a starting point, not legal advice.",
+ "narration": null,
+ "evidence": [
+  {
+   "id": "E1",
+   "kind": "domain",
+   "check": "linear.com",
+   "result": "taken",
+   "source": "RDAP https://rdap.verisign.com/com/v1/",
+   "at": "2026-10-26T13:29:27Z"
+  },
+  {
+   "id": "E2",
+   "kind": "domain",
+   "check": "linear.io",
+   "result": "couldn't confirm (WHOIS timed out)",
+   "at": "2026-10-26T13:29:27Z"
+  },
+  {
+   "id": "E3",
+   "kind": "domain",
+   "check": "linear.ai",
+   "result": "taken",
+   "source": "RDAP https://rdap.identitydigital.services/rdap/",
+   "at": "2026-10-26T13:29:27Z"
+  },
+  {
+   "id": "E4",
+   "kind": "handle",
+   "check": "github:@linear",
+   "result": "taken",
+   "at": "2026-10-26T13:29:27Z"
+  },
+  {
+   "id": "E5",
+   "kind": "handle",
+   "check": "reddit:@linear",
+   "result": "couldn't confirm (403)",
+   "at": "2026-10-26T13:29:27Z"
+  },
+  {
+   "id": "E6",
+   "kind": "handle",
+   "check": "youtube:@linear",
+   "result": "taken",
+   "at": "2026-10-26T13:29:27Z"
+  },
+  {
+   "id": "E7",
+   "kind": "handle",
+   "check": "instagram:@linear",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T13:29:27Z"
+  },
+  {
+   "id": "E8",
+   "kind": "handle",
+   "check": "tiktok:@linear",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T13:29:27Z"
+  },
+  {
+   "id": "E9",
+   "kind": "handle",
+   "check": "x:@linear",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T13:29:27Z"
+  },
+  {
+   "id": "E10",
+   "kind": "apps",
+   "check": "Apple App Store (iTunes Search API)",
+   "matches": [
+    {
+     "app": "Linear Mobile",
+     "seller": "Linear Orbit, Inc.",
+     "url": "https://apps.apple.com/us/app/linear-mobile/id1645587184?uo=4"
+    },
+    {
+     "app": "Linear Access Control App",
+     "seller": "Nice North America LLC",
+     "url": "https://apps.apple.com/us/app/linear-access-control-app/id1558186542?uo=4"
+    },
+    {
+     "app": "Linearity Curve Graphic Design",
+     "seller": "Linearity GmbH",
+     "url": "https://apps.apple.com/us/app/linearity-curve-graphic-design/id1219074514?uo=4"
+    },
+    {
+     "app": "Linear Assistenza stradale",
+     "seller": "Compagnia Assicuratrice Linear S.p.A.",
+     "url": "https://apps.apple.com/us/app/linear-assistenza-stradale/id1392269437?uo=4"
+    },
+    {
+     "app": "Linear BluePass",
+     "seller": "Nice North America LLC",
+     "url": "https://apps.apple.com/us/app/linear-bluepass/id1273325949?uo=4"
+    },
+    {
+     "app": "Linear Interpolation Master",
+     "seller": "VERVE TECHNOLOGIES PTY. LTD.",
+     "url": "https://apps.apple.com/us/app/linear-interpolation-master/id1433976994?uo=4"
+    },
+    {
+     "app": "Linear Series Remote",
+     "seller": "THE MAGNADYNE CORPORATION",
+     "url": "https://apps.apple.com/us/app/linear-series-remote/id1457223239?uo=4"
+    },
+    {
+     "app": "Linear Algebra - Matrix Solver",
+     "seller": "ALG Software Lab SIA",
+     "url": "https://apps.apple.com/us/app/linear-algebra-matrix-solver/id1660933354?uo=4"
+    },
+    {
+     "app": "LinearShooter",
+     "seller": "Yusuke Nakada",
+     "url": "https://apps.apple.com/us/app/linearshooter/id1534540833?uo=4"
+    }
+   ],
+   "at": "2026-10-26T13:29:27Z",
+   "status": 200
+  },
+  {
+   "id": "E11",
+   "kind": "trademark",
+   "check": "USPTO tmsearch",
+   "matches": [
+    {
+     "wordmark": "LINEAR",
+     "id": "98428052",
+     "registrationId": "7977947",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "CrossHatch Winery LLC (LIMITED LIABILITY COMPANY; Florida, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "86691885",
+     "registrationId": "5206525",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Sussman-Automatic Corporation (CORPORATION; NEW YORK, USA)",
+      "ATMOS PROJECT, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "76437644",
+     "registrationId": "2719252",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Linear Technology Corporation (CORPORATION; CALIFORNIA, USA)",
+      "ANALOG DEVICES INTERNATIONAL UNLIMITED COMPANY (PRIVATE UNLIMITED COMPANY; IRELAND)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "97892322",
+     "registrationId": "7485001",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Atmos Project, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "98153442",
+     "registrationId": "7716902",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Smith & Fong Company (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "78385141",
+     "registrationId": "2982223",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "AirDialog LLC (LIMITED LIABILITY COMPANY; MASSACHUSETTS, USA)",
+      "AR-TAXI SERVICE AND SUPPORT LLC (LIMITED LIABILITY COMPANY; MASSACHUSETTS, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "87091118",
+     "registrationId": "5558232",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "Nortek Security & Control LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)",
+      "NICE NORTH AMERICA LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "75322354",
+     "registrationId": "2196711",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Encore Orthopedics, Inc. (CORPORATION; TEXAS, USA)",
+      "ENCORE MEDICAL L.P. (LIMITED PARTNERSHIP; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "98977171",
+     "registrationId": "8227400",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "WCC LLC (LIMITED LIABILITY COMPANY; New Mexico, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "85178034",
+     "registrationId": "3981467",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Maquet Cardiovascular LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)",
+      "DATASCOPE CORP. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "78629003",
+     "registrationId": "3156924",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Bicycle Man, LLC (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "85580503",
+     "registrationId": "4291291",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Restivo, Joseph (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "72305557",
+     "registrationId": "0874667",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "LINEAR CORPORATION (CORPORATION; CALIFORNIA, USA)",
+      "NICE NORTH AMERICA LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "98654790",
+     "registrationId": null,
+     "alive": true,
+     "statusDescription": "NOTICE OF ALLOWANCE - ISSUED",
+     "ownerName": [
+      "WCC LLC (LIMITED LIABILITY COMPANY; New Mexico, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "98891490",
+     "registrationId": "7918025",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "LINEAR CLOTHING LLC (LIMITED LIABILITY COMPANY; Idaho, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "75469074",
+     "registrationId": "2588747",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Universal Percussion, Incorporated (CORPORATION; OHIO, USA)",
+      "CARDINAL PERCUSSION, INC. (CORPORATION; OHIO, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "73230865",
+     "registrationId": "1192769",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 18",
+     "ownerName": [
+      "Linear Products, Inc. (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "73422732",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "LITTON SYSTEMS, INC. 360 NORTH CRESCENT DRIVE BEVERLY HILLS, CALIFORNIA 90210 (CORPORATION; Not in List)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "87503992",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Pennachio, Charles (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "79161275",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "IR CANCELLED; US APPLICATION ABANDONED",
+     "ownerName": [
+      "Nilson Group AB (Limited Company; SWEDEN)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "85948214",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "MATRIX FUNDING, INC (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "73156394",
+     "registrationId": "1175880",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Hobart Brothers Company (CORPORATION; OHIO, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "75375623",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "LINEAR EQUIPAMENTOS ELETRONICOS S/A (CORPORATION; BRAZIL)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "75390030",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Platte Chemical Co. (CORPORATION; NEBRASKA, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "74458347",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "LINEAR INTERNATIONAL, INC. (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "78973382",
+     "registrationId": "3340049",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Linear Media, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "73032714",
+     "registrationId": "1019100",
+     "alive": false,
+     "statusDescription": "EXPIRED",
+     "ownerName": [
+      "H.B. FULLER COMPANY (CORPORATION; MINNESOTA, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "74224939",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Sauder Manufacturing Company (CORPORATION; OHIO, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "76612501",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "DATASCOPE TRADEMARK CORP. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "85167093",
+     "registrationId": "3977638",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Linear Title & Closing, Ltd. (CORPORATION; RHODE ISLAND, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "78611793",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "LG Electronics Inc. (CORPORATION; REPUBLIC OF KOREA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "78687943",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Jacques Moret, Inc. (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "88632743",
+     "registrationId": "7064620",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 7",
+     "ownerName": [
+      "JOSEPH RESTIVO (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "90004626",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "AS America, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "87120684",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "PRO-IRODA INDUSTRIES, INC. (CORPORATION; TAIWAN)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "74591552",
+     "registrationId": "1975920",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "BIOMOLECULAR INCORPORATED (CORPORATION; NEVADA, USA)",
+      "BARNSTEAD THERMOLYNE CORPORATION (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "75861627",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Linear B Corporation (CORPORATION; NEW HAMPSHIRE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "78244512",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - EXPRESS",
+     "ownerName": [
+      "Profound Beauty Inc. (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "78429650",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Atlantis Plastics, Inc. (CORPORATION; FLORIDA, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "85455367",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Itochu Prominent USA LLC (LIMITED LIABILITY COMPANY; Not in List)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "79004739",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "IR CANCELLED; US APPLICATION ABANDONED",
+     "ownerName": [
+      "linear Gesellschaft f\u00fcr konstruktives Design mbH (UNKNOWN; Not in List)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "85591763",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Monster, Inc. (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "72210148",
+     "registrationId": "0810404",
+     "alive": false,
+     "statusDescription": "EXPIRED",
+     "ownerName": [
+      "NEON PRODUCTS, INC. (CORPORATION; OHIO, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "73673739",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "CARLTON HAIR INTERNATIONAL, INC. (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "75436232",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "StairMaster Sports/Medical Products, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "77667577",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Independent Living Aids, LLC (LIMITED LIABILITY COMPANY; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "85274638",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Mango Capital, LLC (LIMITED LIABILITY COMPANY; NEW JERSEY, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "78968354",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Linear AB (COMPANY; SWEDEN)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "76677854",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Datascope Trademark Corp. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LINEAR",
+     "id": "76503457",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "BACOU-DALLOZ USA SAFETY, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    }
+   ],
+   "source": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+   "at": "2026-10-26T13:29:27Z"
+  }
+ ]
+}

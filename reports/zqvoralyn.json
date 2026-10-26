@@ -1,0 +1,98 @@
+{
+ "name": "zqvoralyn",
+ "risk": 0,
+ "verdict": "LIKELY CLEAR",
+ "factors": [],
+ "unconfirmed": [
+  "E2",
+  "E5",
+  "E7",
+  "E8",
+  "E9"
+ ],
+ "explanation": "Verdict for \"zqvoralyn\": LIKELY CLEAR (risk 0/100).\nNo conflicts were found in the sources that answered: [E1] [E3] [E4] [E6] [E10] [E11].\nNot counted either way, because the source would not confirm: [E2] [E5] [E7] [E8] [E9].\nTrademark results are a starting point, not legal advice.",
+ "narration": null,
+ "evidence": [
+  {
+   "id": "E1",
+   "kind": "domain",
+   "check": "zqvoralyn.com",
+   "result": "available",
+   "source": "RDAP https://rdap.verisign.com/com/v1/",
+   "at": "2026-10-26T13:29:12Z"
+  },
+  {
+   "id": "E2",
+   "kind": "domain",
+   "check": "zqvoralyn.io",
+   "result": "couldn't confirm (WHOIS timed out)",
+   "at": "2026-10-26T13:29:12Z"
+  },
+  {
+   "id": "E3",
+   "kind": "domain",
+   "check": "zqvoralyn.ai",
+   "result": "available",
+   "source": "RDAP https://rdap.identitydigital.services/rdap/",
+   "at": "2026-10-26T13:29:12Z"
+  },
+  {
+   "id": "E4",
+   "kind": "handle",
+   "check": "github:@zqvoralyn",
+   "result": "available",
+   "at": "2026-10-26T13:29:12Z"
+  },
+  {
+   "id": "E5",
+   "kind": "handle",
+   "check": "reddit:@zqvoralyn",
+   "result": "couldn't confirm (403)",
+   "at": "2026-10-26T13:29:12Z"
+  },
+  {
+   "id": "E6",
+   "kind": "handle",
+   "check": "youtube:@zqvoralyn",
+   "result": "available",
+   "at": "2026-10-26T13:29:12Z"
+  },
+  {
+   "id": "E7",
+   "kind": "handle",
+   "check": "instagram:@zqvoralyn",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T13:29:12Z"
+  },
+  {
+   "id": "E8",
+   "kind": "handle",
+   "check": "tiktok:@zqvoralyn",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T13:29:12Z"
+  },
+  {
+   "id": "E9",
+   "kind": "handle",
+   "check": "x:@zqvoralyn",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T13:29:12Z"
+  },
+  {
+   "id": "E10",
+   "kind": "apps",
+   "check": "Apple App Store (iTunes Search API)",
+   "matches": [],
+   "at": "2026-10-26T13:29:12Z",
+   "status": 200
+  },
+  {
+   "id": "E11",
+   "kind": "trademark",
+   "check": "USPTO tmsearch",
+   "matches": [],
+   "source": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+   "at": "2026-10-26T13:29:12Z"
+  }
+ ]
+}

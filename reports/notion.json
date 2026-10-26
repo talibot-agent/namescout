@@ -1,0 +1,669 @@
+{
+ "name": "notion",
+ "risk": 100,
+ "verdict": "AVOID",
+ "factors": [
+  [
+   25,
+   "notion.com is already registered, so the most valuable domain is unavailable",
+   [
+    "E1"
+   ]
+  ],
+  [
+   10,
+   "2 of 3 checked domains are registered",
+   [
+    "E1",
+    "E3"
+   ]
+  ],
+  [
+   10,
+   "Handle already in use on github, youtube",
+   [
+    "E4",
+    "E6"
+   ]
+  ],
+  [
+   30,
+   "4 App Store app(s) start with this name, e.g. \"Notion: Notes, Tasks, AI\" by Notion Labs, Incorporated",
+   [
+    "E10"
+   ]
+  ],
+  [
+   40,
+   "Live USPTO mark \"NOTION\" (serial 97879391, owner ['Squeeze Nutrition LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)']) matches exactly",
+   [
+    "E11"
+   ]
+  ]
+ ],
+ "unconfirmed": [
+  "E2",
+  "E5",
+  "E7",
+  "E8",
+  "E9"
+ ],
+ "explanation": "Verdict for \"notion\": AVOID (risk 100/100).\n+40: Live USPTO mark \"NOTION\" (serial 97879391, owner ['Squeeze Nutrition LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)']) matches exactly [E11].\n+30: 4 App Store app(s) start with this name, e.g. \"Notion: Notes, Tasks, AI\" by Notion Labs, Incorporated [E10].\n+25: notion.com is already registered, so the most valuable domain is unavailable [E1].\n+10: Handle already in use on github, youtube [E4] [E6].\n+10: 2 of 3 checked domains are registered [E1] [E3].\nNot counted either way, because the source would not confirm: [E2] [E5] [E7] [E8] [E9].\nTrademark results are a starting point, not legal advice.",
+ "narration": null,
+ "evidence": [
+  {
+   "id": "E1",
+   "kind": "domain",
+   "check": "notion.com",
+   "result": "taken",
+   "source": "RDAP https://rdap.verisign.com/com/v1/",
+   "at": "2026-10-26T13:28:57Z"
+  },
+  {
+   "id": "E2",
+   "kind": "domain",
+   "check": "notion.io",
+   "result": "couldn't confirm (WHOIS timed out)",
+   "at": "2026-10-26T13:28:57Z"
+  },
+  {
+   "id": "E3",
+   "kind": "domain",
+   "check": "notion.ai",
+   "result": "taken",
+   "source": "RDAP https://rdap.identitydigital.services/rdap/",
+   "at": "2026-10-26T13:28:57Z"
+  },
+  {
+   "id": "E4",
+   "kind": "handle",
+   "check": "github:@notion",
+   "result": "taken",
+   "at": "2026-10-26T13:28:57Z"
+  },
+  {
+   "id": "E5",
+   "kind": "handle",
+   "check": "reddit:@notion",
+   "result": "couldn't confirm (403)",
+   "at": "2026-10-26T13:28:57Z"
+  },
+  {
+   "id": "E6",
+   "kind": "handle",
+   "check": "youtube:@notion",
+   "result": "taken",
+   "at": "2026-10-26T13:28:57Z"
+  },
+  {
+   "id": "E7",
+   "kind": "handle",
+   "check": "instagram:@notion",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T13:28:57Z"
+  },
+  {
+   "id": "E8",
+   "kind": "handle",
+   "check": "tiktok:@notion",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T13:28:57Z"
+  },
+  {
+   "id": "E9",
+   "kind": "handle",
+   "check": "x:@notion",
+   "result": "couldn't confirm (platform hides availability; manual check link given)",
+   "at": "2026-10-26T13:28:57Z"
+  },
+  {
+   "id": "E10",
+   "kind": "apps",
+   "check": "Apple App Store (iTunes Search API)",
+   "matches": [
+    {
+     "app": "Notion: Notes, Tasks, AI",
+     "seller": "Notion Labs, Incorporated",
+     "url": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4"
+    },
+    {
+     "app": "Notion Calendar",
+     "seller": "Notion Labs, Incorporated",
+     "url": "https://apps.apple.com/us/app/notion-calendar/id1607562761?uo=4"
+    },
+    {
+     "app": "Notion Agents",
+     "seller": "Notion Labs, Incorporated",
+     "url": "https://apps.apple.com/us/app/notion-agents/id6759811964?uo=4"
+    },
+    {
+     "app": "Notion: Music Notation & Tab",
+     "seller": "Fender Digital, LLC",
+     "url": "https://apps.apple.com/us/app/notion-music-notation-tab/id475820434?uo=4"
+    }
+   ],
+   "at": "2026-10-26T13:28:57Z",
+   "status": 200
+  },
+  {
+   "id": "E11",
+   "kind": "trademark",
+   "check": "USPTO tmsearch",
+   "matches": [
+    {
+     "wordmark": "NOTION",
+     "id": "97879391",
+     "registrationId": "7385076",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Squeeze Nutrition LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "85809087",
+     "registrationId": "5091378",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "Canopy Technologies, Inc. (CORPORATION; DELAWARE, USA)",
+      "NOTION LABS, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "78503074",
+     "registrationId": "3134142",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "VirtuosoWorks, Inc. (CORPORATION; NORTH CAROLINA, USA)",
+      "PRESONUS AUDIO ELECTRONICS, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "88291319",
+     "registrationId": "6240399",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Neurosity, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "88291312",
+     "registrationId": "6077650",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Neurosity, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "85809090",
+     "registrationId": "5091379",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "Canopy Technologies, Inc. (CORPORATION; DELAWARE, USA)",
+      "NOTION LABS, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "88832012",
+     "registrationId": "6890067",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Notion Consulting LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)",
+      "SIA PARTNERS U.S., INC. (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "86380982",
+     "registrationId": "4989250",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "Loop Labs, Inc. (CORPORATION; DELAWARE, USA)",
+      "HONEY INSURANCE PTY LTD (PROPRIETARY LIMITED COMPANY; AUSTRALIA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "99636738",
+     "registrationId": null,
+     "alive": true,
+     "statusDescription": "NOTICE OF ALLOWANCE - ISSUED",
+     "ownerName": [
+      "Shaw Industries Group, Inc. (CORPORATION; Georgia, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "87923697",
+     "registrationId": "5964558",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "Notion Labs, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "85809084",
+     "registrationId": "5091377",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "Canopy Technologies, Inc. (CORPORATION; DELAWARE, USA)",
+      "NOTION LABS, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION CERTIFIED NOTION CERTIFIED",
+     "id": "97556518",
+     "registrationId": "7233848",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Notion Labs, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "LAW NOTION",
+     "id": "97775532",
+     "registrationId": "7363802",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Qualimental Technologies Ltd (LIMITED COMPANY (LTD.); UNITED KINGDOM)"
+     ]
+    },
+    {
+     "wordmark": "BOLD NOTION",
+     "id": "87033693",
+     "registrationId": "5105003",
+     "alive": true,
+     "statusDescription": "SECTION 8 & 15-ACCEPTED AND ACKNOWLEDGED",
+     "ownerName": [
+      "The Core Club IP, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)",
+      "CORE GLOBAL IP, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION CERTIFIED",
+     "id": "97556509",
+     "registrationId": "7233847",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Notion Labs, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "FILMIC NOTION",
+     "id": "90063152",
+     "registrationId": "6398245",
+     "alive": true,
+     "statusDescription": "SECTION 8-ACCEPTED",
+     "ownerName": [
+      "Aleman, Gerardo E. (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "SPRING NOTION",
+     "id": "98415287",
+     "registrationId": "7610550",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "JMI GLOBAL (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "FIBER NOTION",
+     "id": "77025168",
+     "registrationId": "3419056",
+     "alive": true,
+     "statusDescription": "REGISTERED AND RENEWED",
+     "ownerName": [
+      "Ridel, Katherine R. (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION ESSENTIALS",
+     "id": "97556535",
+     "registrationId": "7233850",
+     "alive": true,
+     "statusDescription": "REGISTERED",
+     "ownerName": [
+      "Notion Labs, Inc. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "PERPETUAL NOTION",
+     "id": "99895421",
+     "registrationId": null,
+     "alive": true,
+     "statusDescription": "PUBLICATION/ISSUE REVIEW COMPLETE",
+     "ownerName": [
+      "James W. Bean (INDIVIDUAL; USA)",
+      "Gordon J. Bean (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION PARTNERS",
+     "id": "50007041",
+     "registrationId": null,
+     "alive": true,
+     "statusDescription": "NEW APPLICATION - ASSIGNED TO EXAMINER",
+     "ownerName": [
+      "Notion, LLC (LIMITED LIABILITY COMPANY; Missouri, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "74490398",
+     "registrationId": "1884722",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Blank, Berlyn & Co., Inc. (CORPORATION; OREGON, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "87428620",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "HOOPSWAGG LLC (LIMITED LIABILITY COMPANY; OREGON, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "78630881",
+     "registrationId": "3738196",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Pacific Coast Feather Company (CORPORATION; WASHINGTON, USA)",
+      "BEDDING ACQUISITION, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "86230440",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Samsung Electronics Co., Ltd. (CORPORATION; REPUBLIC OF KOREA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "97437602",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Notion Golf Ltd (private limited company; UNITED KINGDOM)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "86775148",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "TROVE, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "86494016",
+     "registrationId": "4794300",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Shanley, David S (INDIVIDUAL; USA)",
+      "JAMA SOFTWARE, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "86576554",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "TROVE, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "85103026",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Samsung Electronics Co., Ltd. (CORPORATION; REPUBLIC OF KOREA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "88411171",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Viridian Pharmaceuticals, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "85924294",
+     "registrationId": "4507917",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Jeret Slack (INDIVIDUAL; USA)",
+      "HOOPSWAGG LLC (LIMITED LIABILITY COMPANY; OREGON, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "79309168",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - EXPRESS AFTER PUB",
+     "ownerName": [
+      "PRO CLIMA NZ LIMITED (NZ Limited Company; NEW ZEALAND)"
+     ]
+    },
+    {
+     "wordmark": "NOTION",
+     "id": "77082009",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "XTRANORMAL TECHNOLOGY INC. (CORPORATION; CANADA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION & GRACE",
+     "id": "86523243",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Be Inspired Boutique (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "CURIOUS NOTION",
+     "id": "87043361",
+     "registrationId": "5109538",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Curious Notion, Inc. (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION DETECTOR",
+     "id": "78034549",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Tocco, Douglas, M. (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "FOGGIEST NOTION",
+     "id": "85521815",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Paragon Vineyard Co., Inc. (CORPORATION; NEVADA, USA)"
+     ]
+    },
+    {
+     "wordmark": "LUCID NOTION",
+     "id": "77029895",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "One Room Industries, Inc. (CORPORATION; COLORADO, USA)"
+     ]
+    },
+    {
+     "wordmark": "HAIR NOTION",
+     "id": "79257301",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "QingDao Show-Ing Hair Products Co.,Ltd. (LIMITED LIABILITY COMPANY; CHINA)"
+     ]
+    },
+    {
+     "wordmark": "MOTION NOTION",
+     "id": "74322831",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED - NO STATEMENT OF USE FILED",
+     "ownerName": [
+      "Mentele, Jerald F. (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION DETECTOR",
+     "id": "75705513",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED PETITION TO REVIVE-DENIED",
+     "ownerName": [
+      "tocco, Douglas (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "ODD NOTION",
+     "id": "77215620",
+     "registrationId": "3473425",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Magic Hat Brewing Company and Performing Arts Center, Inc. (CORPORATION; VERMONT, USA)"
+     ]
+    },
+    {
+     "wordmark": "SPRING NOTION",
+     "id": "86639919",
+     "registrationId": "4892234",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "JMI GLOBAL (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "SPRING NOTION",
+     "id": "86639917",
+     "registrationId": "4877600",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "JMI GLOBAL (CORPORATION; CALIFORNIA, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION AI",
+     "id": "86734776",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "TROVE, INC. (CORPORATION; DELAWARE, USA)"
+     ]
+    },
+    {
+     "wordmark": "ROGUE NOTION",
+     "id": "86118190",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Rogue Notion LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+     ]
+    },
+    {
+     "wordmark": "24 NOTION",
+     "id": "77686928",
+     "registrationId": "3695287",
+     "alive": false,
+     "statusDescription": "CANCELLED - SECTION 8",
+     "ownerName": [
+      "Lukas, Ivo (INDIVIDUAL; USA)"
+     ]
+    },
+    {
+     "wordmark": "LITTLE NOTION",
+     "id": "72377085",
+     "registrationId": "0918592",
+     "alive": false,
+     "statusDescription": "EXPIRED",
+     "ownerName": [
+      "MAIDENFORM, INC. (CORPORATION; NEW YORK, USA)"
+     ]
+    },
+    {
+     "wordmark": "NOTION SYSTEMS",
+     "id": "99001749",
+     "registrationId": null,
+     "alive": false,
+     "statusDescription": "ABANDONED-FAILURE TO RESPOND OR LATE RESPONSE",
+     "ownerName": [
+      "Notion Systems GmbH (LIMITED LIABILITY COMPANY; Germany)"
+     ]
+    }
+   ],
+   "source": "https://tmsearch.uspto.gov/prod-stage-v1-0-0/tmsearch",
+   "at": "2026-10-26T13:28:57Z"
+  }
+ ]
+}

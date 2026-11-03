@@ -13,9 +13,20 @@ import checks, hmem, zetaris_source
 
 PLAT = ('github', 'reddit', 'youtube', 'instagram', 'tiktok', 'x')
 
+def slug(n):
+    """Domain/handle-safe form: lowercase, everything but a-z0-9 removed ('Orbit Me' -> 'orbitme')."""
+    return re.sub(r'[^a-z0-9]', '', (n or '').lower())
+
+def hyphen_slug(n):
+    """Hyphenated variant for multi-word names ('Orbit Me' -> 'orbit-me'); None for single words."""
+    h = re.sub(r'-+', '-', re.sub(r'[^a-z0-9]+', '-', (n or '').lower())).strip('-')
+    return h if '-' in h else None
+
 def gather(name, tlds):
-    jobs = [('domain', lambda t=t: checks.domain(name, t)) for t in tlds]
-    jobs += [('handle', lambda p=p: checks.handle(name, p)) for p in PLAT]
+    s, hy = slug(name), hyphen_slug(name)
+    jobs = [('domain', lambda t=t: checks.domain(s, t)) for t in tlds]
+    if hy: jobs.append(('domain_variant', lambda: checks.domain(hy, 'com')))
+    jobs += [('handle', lambda p=p: checks.handle(s, p)) for p in PLAT]
     jobs += [('apps', lambda: checks.apps(name)), ('trademark', lambda: checks.trademarks(name))]
     if zetaris_source.configured():
         jobs.append(('portfolio', lambda: zetaris_source.portfolio(name)))
@@ -99,14 +110,14 @@ def report_html(name, a, ev, text):
     return f"<!doctype html><meta charset=utf-8><title>NameScout: {html.escape(name)}</title><style>body{{font:15px system-ui;max-width:900px;margin:2em auto}}td,th{{border-bottom:1px solid #ddd;padding:4px 8px}}.v{{font-size:1.6em;font-weight:700}}</style><h1>NameScout</h1><div class=v>{html.escape(name)}: {a['verdict']} ({a['risk']}/100)</div><p>{body}</p><h2>Evidence</h2><table><tr><th>id</th><th>check</th><th>result</th><th>source</th><th>checked (UTC)</th></tr>{rows}</table><p><small>Built by Tali, an AI agent. Read-only lookups; nothing is registered.</small></p>"
 
 def run(name, tlds=('com', 'io', 'ai'), out_dir='.'):
-    name = name.lower()
+    name = ' '.join(name.split())  # keep original casing/spacing for display
     ev = gather(name, list(tlds)); a = assess(name, ev); text = explain(name, a, ev)
     narr = llm_narrate(text, ev)
     rep = dict(name=name, **a, explanation=text, narration=narr, evidence=ev)
     rep['memory_id'] = hmem.remember(rep)
     os.makedirs(out_dir, exist_ok=True)
-    open(os.path.join(out_dir, f'{name}.json'), 'w').write(json.dumps(rep, indent=1, default=str))
-    open(os.path.join(out_dir, f'{name}.html'), 'w').write(report_html(name, a, ev, narr or text))
+    open(os.path.join(out_dir, f'{slug(name)}.json'), 'w').write(json.dumps(rep, indent=1, default=str))
+    open(os.path.join(out_dir, f'{slug(name)}.html'), 'w').write(report_html(name, a, ev, narr or text))
     return rep
 
 if __name__ == '__main__':

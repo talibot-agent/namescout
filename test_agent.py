@@ -74,3 +74,29 @@ def test_hmem_remember_then_recall(tmp_path, monkeypatch):
     assert mid and mid.startswith('mem-')
     r = _h.recall('quillorai')
     assert any('quillora' in m['content'] for m in r['matches'])
+
+def test_zetaris_rows_live_headers_shape():
+    # Local platform returns {headers, data:[[...]]} (not nested {columns,rows})
+    payload = {"headers": ["name", "kind", "system", "owner"], "data": [["Zentro", "product", "catalogue", "growth"]], "total": 1}
+    out = _z.rows(payload)
+    assert out == [{"name": "Zentro", "kind": "product", "system": "catalogue", "owner": "growth"}]
+
+
+def test_multiword_name_uses_slug_for_domains_and_handles(monkeypatch, tmp_path):
+    import checks, hmem
+    assert agent.slug('Orbit Me') == 'orbitme' and agent.hyphen_slug('Orbit Me') == 'orbit-me'
+    assert agent.slug("Zé's App!") == 'zsapp' and agent.hyphen_slug('Notion') is None
+    seen = []
+    monkeypatch.setattr(checks, 'domain', lambda n, t: seen.append(f'{n}.{t}') or {'check': f'{n}.{t}', 'result': 'available', 'at': 't'})
+    monkeypatch.setattr(checks, 'handle', lambda n, p: seen.append(f'{p}:@{n}') or {'check': f'{p}:@{n}', 'result': 'available', 'at': 't'})
+    monkeypatch.setattr(checks, 'apps', lambda n: {'check': 'app', 'matches': [], 'at': 't'})
+    monkeypatch.setattr(checks, 'trademarks', lambda n: {'check': 'tm', 'matches': [], 'at': 't'})
+    monkeypatch.setattr(hmem, 'recall', lambda n: {'check': 'mem', 'result': 'none', 'at': 't'})
+    monkeypatch.setattr(hmem, 'remember', lambda r: None)
+    monkeypatch.setattr(agent.zetaris_source, 'configured', lambda: False)
+    monkeypatch.delenv('LLM_API_KEY', raising=False)
+    rep = agent.run('Orbit Me', out_dir=str(tmp_path))
+    assert not any(' ' in c for c in seen), seen
+    assert 'orbitme.com' in seen and 'orbit-me.com' in seen and 'github:@orbitme' in seen
+    assert rep['name'] == 'Orbit Me' and (tmp_path / 'orbitme.html').exists()
+    assert 'Orbit Me' in (tmp_path / 'orbitme.html').read_text()

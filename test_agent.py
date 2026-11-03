@@ -100,3 +100,32 @@ def test_multiword_name_uses_slug_for_domains_and_handles(monkeypatch, tmp_path)
     assert 'orbitme.com' in seen and 'orbit-me.com' in seen and 'github:@orbitme' in seen
     assert rep['name'] == 'Orbit Me' and (tmp_path / 'orbitme.html').exists()
     assert 'Orbit Me' in (tmp_path / 'orbitme.html').read_text()
+
+
+def test_io_co_use_registry_rdap_then_whois(monkeypatch):
+    import checks
+    urls = []
+    monkeypatch.setattr(checks, 'get', lambda u, **k: urls.append(u) or ((200, b'') if 'taken' in u else (404, b'')))
+    monkeypatch.setattr(checks, 'whois_domain', lambda *a, **k: (_ for _ in ()).throw(AssertionError('no whois')))
+    assert checks.domain('taken', 'io')['result'] == 'taken'
+    assert checks.domain('free', 'co')['result'] == 'available'
+    assert urls[0].startswith('https://rdap.identitydigital.services/') and 'registry.co' in urls[1]
+    monkeypatch.setattr(checks, 'get', lambda u, **k: (None, b'down'))
+    monkeypatch.setattr(checks, 'whois_domain', lambda n, t, ts: {'check': f'{n}.{t}', 'result': 'available', 'source': 'WHOIS', 'at': ts})
+    assert checks.domain('x', 'io')['source'] == 'WHOIS'
+
+
+def test_whois_retries_timeouts_with_backoff(monkeypatch):
+    import checks, socket
+    calls, sleeps = [], []
+    def flaky(srv, q):
+        calls.append(q)
+        if len(calls) < 3: raise socket.timeout('timed out')
+        return b'Domain Name: X.IO\nRegistrar: Y'
+    monkeypatch.setattr(checks, '_whois_query', flaky)
+    r = checks.whois_domain('x', 'io', 't', sleep=sleeps.append)
+    assert r['result'] == 'taken' and len(calls) == 3 and sleeps == [1.0, 2.0]
+    calls.clear(); sleeps.clear()
+    monkeypatch.setattr(checks, '_whois_query', lambda s, q: calls.append(q) or (_ for _ in ()).throw(socket.timeout()))
+    r = checks.whois_domain('x', 'io', 't', sleep=sleeps.append)
+    assert 'after 3 tries' in r['result'] and len(calls) == 3 and sleeps == [1.0, 2.0]

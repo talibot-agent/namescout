@@ -20,25 +20,44 @@ def rdap_base(tld):
     for tlds, urls in _boot:
         if tld in tlds: return urls[0]
 WHOIS = {'io': 'whois.nic.io', 'co': 'whois.registry.co', 'me': 'whois.nic.me'}
-def whois_domain(name, tld, t):
+# Registries missing from the IANA RDAP bootstrap; WHOIS port 43 often times out from this box.
+RDAP_OVERRIDE = {'io': 'https://rdap.identitydigital.services/rdap/', 'co': 'https://rdap.registry.co/co/'}
+WHOIS_RETRIES, WHOIS_BACKOFF = 2, 1.0
+def _whois_query(srv, q):
     import socket
+    s = socket.create_connection((srv, 43), timeout=15); s.sendall(q.encode())
+    buf = b''
+    while True:
+        c = s.recv(4096)
+        if not c: break
+        buf += c
+    return buf
+def whois_domain(name, tld, t, retries=None, backoff=None, sleep=None):
+    import socket, time
+    retries = WHOIS_RETRIES if retries is None else retries
+    backoff = WHOIS_BACKOFF if backoff is None else backoff
+    sleep = sleep or time.sleep
     srv = WHOIS.get(tld, f'whois.nic.{tld}')
-    try:
-        s = socket.create_connection((srv, 43), timeout=15); s.sendall(f'{name}.{tld}\r\n'.encode())
-        buf = b''
-        while True:
-            c = s.recv(4096)
-            if not c: break
-            buf += c
-        txt = buf.decode('utf-8', 'replace').lower()
-    except Exception as e:
-        return {'check': f'{name}.{tld}', 'result': f"couldn't confirm (WHOIS {e})", 'at': t}
+    for i in range(retries + 1):
+        try:
+            txt = _whois_query(srv, f'{name}.{tld}\r\n').decode('utf-8', 'replace').lower(); break
+        except (socket.timeout, TimeoutError) as e:
+            if i < retries: sleep(backoff * 2 ** i); continue
+            return {'check': f'{name}.{tld}', 'result': f"couldn't confirm (WHOIS timed out after {retries + 1} tries)", 'at': t}
+        except Exception as e:
+            return {'check': f'{name}.{tld}', 'result': f"couldn't confirm (WHOIS {e})", 'at': t}
     if re.search(r'no match|not found|no data found|no entries found|status:\s*free|is available', txt): res = 'available'
     elif re.search(r'domain name:|registrar:|creation date', txt): res = 'taken'
     else: res = "couldn't confirm (WHOIS unparsed)"
     return {'check': f'{name}.{tld}', 'result': res, 'source': 'WHOIS ' + srv, 'at': t}
 def domain(name, tld):
-    base = rdap_base(tld); t = now()
+    t = now()
+    if tld in RDAP_OVERRIDE:  # registry RDAP first, WHOIS only if RDAP gives no answer
+        st, _ = get(RDAP_OVERRIDE[tld] + f'domain/{name}.{tld}')
+        if st in (200, 404):
+            return {'check': f'{name}.{tld}', 'result': 'taken' if st == 200 else 'available', 'source': 'RDAP ' + RDAP_OVERRIDE[tld], 'at': t}
+        return whois_domain(name, tld, t)
+    base = rdap_base(tld)
     if not base: return whois_domain(name, tld, t)
     s, _ = get(base.rstrip('/') + f'/domain/{name}.{tld}')
     res = 'taken' if s == 200 else 'available' if s == 404 else f"couldn't confirm (RDAP {s})"
